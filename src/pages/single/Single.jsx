@@ -17,25 +17,25 @@ const Single = () => {
             <span className="editButton">Edit</span>
 
             <div className="item">
-              <img src="/assets/person.jpg" alt="" className="itemImg" />
+              <img src="https://i.postimg.cc/bJsBzpxC/b3.jpg" alt="" className="itemImg" />
 
               <div className="details">
-                <h1 className="itemTitle">Olivia White</h1>
+                <h1 className="itemTitle">Amit Patel</h1>
                 <div className="detailItem">
                   <span className="itemkey">Email: </span>
-                  <span className="itemValue">olivia@gmail.com</span>
+                  <span className="itemValue">amit.patel@gmail.com</span>
                 </div>
                 <div className="detailItem">
                   <span className="itemkey">Phone: </span>
-                  <span className="itemValue">+4 123-234-45</span>
+                  <span className="itemValue">+91 987564123</span>
                 </div>
                 <div className="detailItem">
                   <span className="itemkey">Address: </span>
-                  <span className="itemValue">Melwook Str. 24 Liverpool</span>
+                  <span className="itemValue">12,Whitefield,Bengaluru,Karnataka</span>
                 </div>
                 <div className="detailItem">
                   <span className="itemkey">Country: </span>
-                  <span className="itemValue">United Kingdom</span>
+                  <span className="itemValue">India</span>
                 </div>
               </div>
             </div>

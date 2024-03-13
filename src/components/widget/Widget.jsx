@@ -1,16 +1,14 @@
-import React from "react";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
-import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import "./widget.scss";
 
-const Widget = ({ type }) => {
+const Widget = ({ type, diff }) => {
   let data;
-  // temp
-  const amount = 500;
-  const diff = 30;
+  let amount;
+  
 
   switch (type) {
     case "customer":
@@ -25,6 +23,7 @@ const Widget = ({ type }) => {
           />
         ),
       };
+      amount = 250;
       break;
     case "order":
       data = {
@@ -38,6 +37,7 @@ const Widget = ({ type }) => {
           />
         ),
       };
+      amount = 50;
       break;
     case "earnings":
       data = {
@@ -51,6 +51,7 @@ const Widget = ({ type }) => {
           />
         ),
       };
+      amount = 3000;
       break;
     case "balance":
       data = {
@@ -64,6 +65,7 @@ const Widget = ({ type }) => {
           />
         ),
       };
+      amount = 800;
       break;
 
     default:
@@ -75,14 +77,14 @@ const Widget = ({ type }) => {
       <div className="left">
         <span className="title">{data.title}</span>
         <span className="counter">
-          {data.isMoney && "$"} {amount}
+          {data.isMoney && <b>&#8377;</b>} {amount}
         </span>
         <span className="link">{data.link}</span>
       </div>
       <div className="right">
         <div className="percentage positive">
           <KeyboardArrowUpIcon />
-          {diff}%
+          {diff }%
         </div>
         {data.icon}
       </div>
@@ -91,3 +93,5 @@ const Widget = ({ type }) => {
 };
 
 export default Widget;
+
+

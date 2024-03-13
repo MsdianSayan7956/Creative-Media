@@ -1,6 +1,7 @@
 import React from "react";
 import MoreVertOutlinedIcon from "@mui/icons-material/MoreVertOutlined";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import "./featured.scss";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -23,7 +24,7 @@ const Featured = () => {
                 value={percentage}
                 text={`${percentage}%`}
                 styles={buildStyles({
-                  pathTransitionDuration: 0.95,
+                  pathTransitionDuration: 1.15,
                   trailColor: "#82ca9d",
                   pathColor: "#210876",
                   textColor: "#210876",
@@ -32,29 +33,30 @@ const Featured = () => {
             )}
           </ChangingProgressProvider>
         </div>
-        <p className="title">Total sales made today</p>
-        <p className="amount">$2042.50K</p>
+        <p className="title">Total sales made yearly</p>
+        <p className="amount"><b>&#8377;</b> 35895.50k</p>
         <p className="desc">Previous transactions</p>
         <div className="summary">
           <div className="item">
             <div className="itemTitle">Target</div>
-            <div className="itemResult negative">
-              <KeyboardArrowDownIcon fontSize="small" />
-              <div className="resultAmount ">$19.4k</div>
+            <div className="itemResult positive">
+              <KeyboardArrowUpIcon fontSize="small"/>
+              <div className="resultAmount ">2509.4k</div>
             </div>
           </div>
           <div className="item">
             <div className="itemTitle">Last Week</div>
-            <div className="itemResult positive">
+            
+            <div className="itemResult negative">
               <KeyboardArrowDownIcon fontSize="small" />
-              <div className="resultAmount">$60.4k</div>
+              <div className="resultAmount">460.4k</div>
             </div>
           </div>
           <div className="item">
             <div className="itemTitle">Last Month</div>
-            <div className="itemResult negative">
-              <KeyboardArrowDownIcon fontSize="small" />
-              <div className="resultAmount">$73.4k</div>
+            <div className="itemResult positive">
+            <KeyboardArrowUpIcon fontSize="small"/>
+              <div className="resultAmount">1873.4k</div>
             </div>
           </div>
         </div>
