@@ -18,7 +18,7 @@ Follow the steps below to install and run the system locally:
 Installation:
 1. Clone the repository to your local machine:
    ```
-   git clone [https://github.com/your-username/your-repository.git](https://github.com/MsdianSayan7956/Creative-Media.git)
+   git clone (https://github.com/MsdianSayan7956/Creative-Media.git)
    ```
 2. Navigate to the project directory:
    ```
