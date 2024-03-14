@@ -13,7 +13,7 @@ This README will guide you through setting up and running the project on your lo
 
 - [Click Here](https://melodic-alfajores-ebb96d.netlify.app/)
 
-               or
+  or
 
 - [Click Here](https://creative-media.onrender.com/)
 
